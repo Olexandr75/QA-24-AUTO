@@ -39,14 +39,17 @@ public class Locators2 {
         Thread.sleep(2000);
         //driver.findElement(By.cssSelector(".btn.btn-primary.blue")).click();
         driver.findElement(By.cssSelector("[title='Search']")).click();
+
         //поиск по буквосочетанию атрибута
         Thread.sleep(2000);
         driver.get("https://www.guinnessworldrecords.com/Account/Login");
         driver.findElement(By.cssSelector("[title*='arc']")).click();
+
         //поиск по первым символам
         Thread.sleep(2000);
         driver.get("https://www.guinnessworldrecords.com/Account/Login");
         driver.findElement(By.cssSelector("[title^='Sear']")).click();
+
         //поиск по последним
         Thread.sleep(2000);
         driver.get("https://www.guinnessworldrecords.com/Account/Login");
