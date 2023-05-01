@@ -32,7 +32,7 @@ public class HW4 {
         //Задание  7
         //*[@id='nav_exercises'], *[@id='nav_references'], //*[@id='nav_tutorials'], //*[@id='cert_navbtn']
         //Задание  8
-        //h3 [text()='Университет'][last]//a[@class='re-home-adult__item-name']
+        //h3 [text()='Университет']/parent::div/../div[5]//a[contains(@class='re-home-adult__link')]
         //Задание  9
         //x.path (a[@class='wt-col-inline menu-second__download-button wt-button wt-button_size_s wt-button_mode_primary'])
          //Задание  10
