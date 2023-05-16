@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class DragNdropEx {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         Actions actions = new Actions(driver);
@@ -20,7 +20,7 @@ public class DragNdropEx {
                 (By.xpath("//i[@class='menu-icon icon-ouverture']"))).
                 clickAndHold().moveToElement(driver.findElement(By.xpath("//i[@class='menu-icon dots-icon']")))
                 .release().build().perform();
-        Thread.sleep(6000);
+        Thread.sleep(8000);
        System.out.println(driver.getTitle());
         System.out.println("============");
         driver.findElement(By.xpath("//a[@id='close-btn']")).click();

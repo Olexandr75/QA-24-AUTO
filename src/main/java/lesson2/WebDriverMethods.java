@@ -20,7 +20,7 @@ public class WebDriverMethods {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
-        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));}}
 
         //конф драйвера. Работа с Cookies.
         /*driver.get("https://itstep.dp.ua/ru");
@@ -29,7 +29,7 @@ public class WebDriverMethods {
         Set<Cookie> set = driver.manage().getCookies();
         for (Cookie cookie:set){
             System.out.println(cookie);
-        }
+
         System.out.println("Количество файлов cookie: "+set.toArray().length);
         System.out.println("Отдельный файл cookie: "+ set.toArray()[4]);
         driver.quit();*/
@@ -78,7 +78,7 @@ public class WebDriverMethods {
         //Работа с окнами 1 вариант
         /*driver.navigate().to("https://itstep.dp.ua/");
         System.out.println(driver.getWindowHandle());
-        ((JavascriptExecutor)driver).executeScript("window.open()");
+        ((JavascriptExecutor)driver).executeScript("window.open()");- открытие нового пустого окна
         System.out.println(driver.getWindowHandles());
         driver.navigate().to("https://rozetka.com.ua/ua/");
         Set<String> setWindowHandles = driver.getWindowHandles();
@@ -92,16 +92,9 @@ public class WebDriverMethods {
         Set<String> setFirst = driver.getWindowHandles();
         ((JavascriptExecutor)driver).executeScript("window.open()");
         Set<String> setSecond = driver.getWindowHandles();
-        setSecond.removeAll(setFirst);
-        String finalDesc = setSecond.iterator().next();
-        driver.switchTo().window(finalDesc);
-        driver.get("https://uhomki.com.ua/ru/");*/
-
-
-        //driver.findElement();
-        //driver.findElements();
+        setSecond.removeAll(setFirst); - вычитание из данных массива removeAll
+        String finalDesc = setSecond.iterator().next();- проходитсся по данным во множестве сетСеконд
+        driver.switchTo().window(finalDesc);*/
 
 
 
-    }
-}

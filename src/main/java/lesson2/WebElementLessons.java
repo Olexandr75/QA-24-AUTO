@@ -46,14 +46,14 @@ public class WebElementLessons {
         //getCssValue() получение значения заданного свойства CSS
         //getTagName() информация тэге выбранного элемента
         //getText() получение текста внктри элемента
-        /*driver.get("https://rozetka.com.ua/ua/");
+        driver.get("https://rozetka.com.ua/ua/");
         WebElement search = driver.findElement(By.xpath("//input[@placeholder='Я шукаю...']"));
         WebElement buttonSearch = driver.findElement(By.cssSelector(".button.button_color_green.button_size_medium.search-form__submit.ng-star-inserted"));
         System.out.println(search.getAttribute("placeholder"));
         System.out.println(search.getCssValue("background-image"));
         System.out.println(buttonSearch.getTagName());
         System.out.println(buttonSearch.getText());
-        driver.quit();*/
+
 
 
 
@@ -63,7 +63,7 @@ public class WebElementLessons {
 
         //getLocation() местонахождение верхнего левого угла элемента
         //getSize() информация о ширине и высоте выбранного элемента
-        driver.get("https://rozetka.com.ua/ua/");
+       /* driver.get("https://rozetka.com.ua/ua/");
         WebElement search = driver.findElement(By.xpath("//input[@placeholder='Я шукаю...']"));
         WebElement buttonSearch = driver.findElement(By.cssSelector(".button.button_color_green.button_size_medium.search-form__submit.ng-star-inserted"));
         System.out.println("Местонахождение верхнего левого угла элемента " + search.getLocation());
@@ -72,7 +72,7 @@ public class WebElementLessons {
 
         System.out.println("Размер нашей кнопки "+ buttonSearch.getSize());
         System.out.println("Высота нашей кнопки "+ buttonSearch.getSize().height);
-        System.out.println("Ширина нашей кнопки "+ buttonSearch.getSize().width);
+        System.out.println("Ширина нашей кнопки "+ buttonSearch.getSize().width);*/
 
 
         //isDisplayed(), isEnabled(), isSelected()

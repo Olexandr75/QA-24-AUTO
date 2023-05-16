@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 public class Txample {
     public static void getAttribute(WebElement element) throws NoSuchAlertEx, NoSuchNameEx, NoSuchIdEx {
         System.out.println("Название тега: "+element.getTagName());
-        if(element.getAttribute("i2d")==null){
+        if(element.getAttribute("id")==null){
             throw new NoSuchIdEx("Аттрибута айди нет");
         }else {
             System.out.println("Аттрибута айди равен "+element.getAttribute("id"));
@@ -35,8 +35,8 @@ public class Txample {
         driver.get("https://uhomki.com.ua/ru/");
         try {
             Thread.sleep(3000);
-        }catch (InterruptedException e){
-            e.getMessage();
+        }catch (InterruptedException ex){
+            ex.getMessage();
         }
         try {
             getAttribute(driver.findElement(By.xpath("//input[@name='q']")));

@@ -29,6 +29,9 @@ public class ActionPack {
         int y = fishHome.getLocation().y+(fishHome.getSize().height)/2;
 
 
+               /*actions.moveByOffset(x,y).
+                moveToElement(driver.findElement(By.xpath("//span[text()='Аквариумы']"))).
+                click().build().perform();*/
 
 
         //moveToElement() позволяет наводить курсор на элемент.
@@ -37,9 +40,6 @@ public class ActionPack {
         actions.moveToElement(driver.findElement(By.xpath("//span[text()='Аквариумы']"))).perform();
         actions.click(driver.findElement(By.xpath("//span[text()='Аквариумы']"))).perform();*/
 
-        /*actions.moveByOffset(x,y).
-                moveToElement(driver.findElement(By.xpath("//span[text()='Аквариумы']"))).
-                click().build().perform();*/
 
 
 

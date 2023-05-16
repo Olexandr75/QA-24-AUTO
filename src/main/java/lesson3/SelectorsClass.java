@@ -16,7 +16,7 @@ public class SelectorsClass {
     public static void main(String[] args) throws InterruptedException {
         //Для работы с дропдаунами необходимо создать объект класса Select
         //для получения возможности работаь с его методами
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://ktokuda.net/");
@@ -77,13 +77,13 @@ public class SelectorsClass {
         //getOptions возвращает все элементы данного Select
         List<WebElement> cityList =  cityListSelect.getOptions();
         //System.out.println(cityList);
-        /*for (WebElement city:cityList){
+        for (WebElement city:cityList){
             if(city.getText().equals("Все города")){
                 continue;
             }
             System.out.println(city.getText());
         }
-*/
+
 
         //getAllSelectedOptions() возвращает все выбранные option из select
         cityListSelect.selectByVisibleText("Киев");

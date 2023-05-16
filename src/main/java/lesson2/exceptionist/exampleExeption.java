@@ -1,7 +1,6 @@
 package lesson2.exceptionist;
 
 import java.util.Scanner;
-
 public class exampleExeption {
     public static void division(int x) throws ZeroValueException, NegativeValueException {
         Scanner scanner = new Scanner(System.in);
@@ -37,7 +36,7 @@ public class exampleExeption {
             System.out.println(e.getMessage());
         }*/
        /* try {
-            division(12);
+            division(1   2);
         }catch (ZeroValueException|NegativeValueException e){
             System.out.println(e.getMessage());
         }*/
