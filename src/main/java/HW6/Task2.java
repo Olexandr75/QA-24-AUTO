@@ -26,15 +26,15 @@ public class Task2 {
         driver.findElement(By.xpath("//a[@id='close-btn']")).click();
         Thread.sleep(3000);*/
         WebElement circleBig = driver.findElement(By.linkText("DRAG"));
-       int x = circleBig.getLocation().x;
+        int x = circleBig.getLocation().x;
         int y = circleBig.getLocation().y;
         actions.moveByOffset(x,y).
                 moveToElement(driver.findElement
-                        (By.linkText("DRAG")),508,78).
+                        (By.linkText("DRAG")),508,95).
                 click().build().perform();
         //driver.findElement(By.partialLinkText("DRAG")).click();//
         Thread.sleep(2000);
-
+//div[@id="fb-root"]/following-sibling::text//
         //WebElement firstElement = driver.findElement(By.partialLinkText("DRAG"));//
         /*WebElement targetElement = driver.findElement(By.xpath("//i[@class='menu-icon dots-icon']"));
         actions.dragAndDrop(firstElement,targetElement).perform();
