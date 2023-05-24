@@ -37,7 +37,7 @@ public class Task1 {
                         actions.moveToElement(firstP).keyDown(Keys.CONTROL).click(firstP).keyUp(Keys.CONTROL).build().perform();
                         Set<String> secondWin = driver.getWindowHandles();
                         secondWin.removeAll(firstWin);
-                System.out.println(driver.getTitle());
+                        System.out.println(driver.getTitle());
 
 
                         String secondWindowHandle = secondWin.iterator().next();
