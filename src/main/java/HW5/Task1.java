@@ -20,9 +20,9 @@ public class Task1 {
                      driver.manage().window().maximize();
             
                 // Создаем список URL-адресов
-                List<String> urls = new ArrayList<String>();
+                List<String> urls = new ArrayList();
 
-                   urls.add("https://www.w3schools.com/");
+                urls.add("https://www.w3schools.com/");
                 urls.add("https://taxi838.ua/ru/dnepr/");
                 urls.add("https://klopotenko.com/");
                 urls.add("https://zoo.kiev.ua/");

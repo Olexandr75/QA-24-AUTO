@@ -18,7 +18,7 @@ public class Keys {
         element.submit();
     }
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://uhomki.com.ua/ru/");
