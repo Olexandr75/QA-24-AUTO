@@ -1,4 +1,4 @@
-package lesson7.priority;
+package Lesson7.priority;
 
 import lesson5.MyWaiters;
 import org.openqa.selenium.By;

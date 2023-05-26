@@ -1,4 +1,4 @@
-package lesson7.suite;
+package Lesson7.suite;
 
 import lesson5.MyWaiters;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ public class BaseTest {
         if(driver==null){
             try {
                 {
-                    System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+                    System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
                     driver = new ChromeDriver();
                     driver.manage().window().maximize();
                 }

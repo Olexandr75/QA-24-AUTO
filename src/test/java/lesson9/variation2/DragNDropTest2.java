@@ -23,7 +23,7 @@ public class DragNDropTest2 {
     }
     @Test
     public void dragNDrop() {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         MyWaiters myWaiters = new MyWaiters(driver);
         driver.manage().window().maximize();

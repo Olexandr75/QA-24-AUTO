@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class MoveToAndSearchTest2 {
     @Test
     public void moveToSaerch() {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://foodex24.pl/ua");

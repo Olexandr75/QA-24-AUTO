@@ -15,7 +15,7 @@ import java.util.List;
 import static org.testng.Assert.*;
 import static org.testng.Assert.assertEquals;
 
-public class Ex1 extends lesson7.suite.BaseTest {
+public class Ex1 extends Lesson7.suite.BaseTest {
 
 
     @Test

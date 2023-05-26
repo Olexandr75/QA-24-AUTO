@@ -15,7 +15,7 @@ public class HomeworkEx {
 
     @Test(dataProvider ="searchProvider")
     public void searchFox(String inputText) {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         WebDriver driver = new ChromeDriver(options);
@@ -49,6 +49,6 @@ public class HomeworkEx {
     public Object[] searchObjects(){
         return new Object[]{
                 "input","смысл","машина"
-        };
+        }
     }
 }
