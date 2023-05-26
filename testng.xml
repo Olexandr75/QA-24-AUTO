@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTests Suite">
+    <test name="AllTestCases">
+        <classes>
+            <class name="Lesson7.suite.Ex1"/>
+            <class name="Lesson7.suite.Ex2"/>
+        </classes>
+    </test>
+</suite>
