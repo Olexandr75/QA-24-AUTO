@@ -1,6 +1,6 @@
 package HW8;
 
-import com.beust.ah.A;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -39,7 +39,7 @@ import java.util.function.Function;
             wait.until(function);
         }
 
-        public WebElement presenceOfElementLocated(By locator) {
+       /* public WebElement presenceOfElementLocated(By locator) {
             return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.presenceOfElementLocated(locator));
         }
 
@@ -126,7 +126,7 @@ import java.util.function.Function;
 
         public void alertIsPresent() {
             wait.until(ExpectedConditions.alertIsPresent());
-        }
+        }*/
 
 
     }

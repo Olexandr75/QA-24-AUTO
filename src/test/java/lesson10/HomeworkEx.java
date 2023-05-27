@@ -49,6 +49,6 @@ public class HomeworkEx {
     public Object[] searchObjects(){
         return new Object[]{
                 "input","смысл","машина"
-        }
+        };
     }
 }
