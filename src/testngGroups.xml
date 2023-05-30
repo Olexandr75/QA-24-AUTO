@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="lesson7.priority.Ex1"/>
+            <class name="Lesson7.priority.Ex1"/>
 
         </classes>
     </test>

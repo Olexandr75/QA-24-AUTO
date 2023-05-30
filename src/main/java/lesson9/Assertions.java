@@ -1,8 +1,8 @@
 package lesson9;
 
 import lesson5.MyWaiters;
-import lesson5.Waiters;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

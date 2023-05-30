@@ -29,6 +29,9 @@ public class HomeworkEx {
         driver.get("https://www.foxtrot.com.ua/");
 
         String input =inputText;
+
+        elements.clickOnElementByXpath("//a[@class ='button user-confirm-location-button']");
+
         elements.sendKeysToElementWithXpath("//input[@type='search']", input);
         elements.clickOnElementByXpath("//input[@value='Найти']");
         myWaiters.waitTitleContainsText("Найдено по запросу");
@@ -48,7 +51,7 @@ public class HomeworkEx {
     @DataProvider(name="searchProvider")
     public Object[] searchObjects(){
         return new Object[]{
-                "input","смысл","машина"
-        };
-    }
-}
+               "input","смысл"};
+        }}
+
+

@@ -19,9 +19,9 @@ public class DragNDropTest {
         MyWaiters myWaiters = new MyWaiters(driver);
         driver.manage().window().maximize();
         driver.get("https://demo.guru99.com/test/drag_drop.html");
-        myWaiters.waitPresenceOfElement(By.xpath("//iframe[@id='gdpr-consent-notice']"));
-        myWaiters.waitForFrameAndSwitchToIt(By.xpath("//iframe[@id='gdpr-consent-notice']"));
-        myWaiters.waitPresenceOfElementReturn(By.xpath("//span[text()='Принять всё']")).click();
+       // myWaiters.waitPresenceOfElement(By.xpath("//iframe[@id='gdpr-consent-notice']"));//
+       // myWaiters.waitForFrameAndSwitchToIt(By.xpath("//iframe[@id='gdpr-consent-notice']"));//
+        //myWaiters.waitPresenceOfElementReturn(By.xpath("//span[text()='Принять всё']")).click();//
 
         WebElement first5000 = myWaiters.waitPresenceOfElementReturn(By.xpath("//li[@id='fourth'][1]/a"));
         WebElement first5000field = driver.findElement(By.xpath("//ol[@id='amt7']"));

@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 public class MoveToAndSearchTest {
     @Test
     public void moveToSaerch() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\sele\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         MyWaiters myWaiters = new MyWaiters(driver);
         driver.manage().window().maximize();

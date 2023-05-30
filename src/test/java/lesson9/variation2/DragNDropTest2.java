@@ -33,9 +33,9 @@ public class DragNDropTest2 {
         ActionClass actions = new ActionClass(driver);
         Assertions assertions = new Assertions(driver);
 
-        myWaiters.waitPresenceOfElement(By.xpath("//iframe[@id='gdpr-consent-notice']"));
+        /*myWaiters.waitPresenceOfElement(By.xpath("//iframe[@id='gdpr-consent-notice']"));
         myWaiters.waitForFrameAndSwitchToIt(By.xpath("//iframe[@id='gdpr-consent-notice']"));
-        myWaiters.waitPresenceOfElementReturn(By.xpath("//span[text()='Принять всё']")).click();
+        myWaiters.waitPresenceOfElementReturn(By.xpath("//span[text()='Принять всё']")).click();*/
 
         actions.dragNdrop(Xpath.fisrt5000, Xpath.fisrt5000Field);
         actions.dragNdrop(Xpath.second5000,Xpath.second5000Field);

@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 import java.time.Duration;
 import java.util.function.Function;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
+
 public class MyWaiters {
     private final WebDriver driver;
 
@@ -92,16 +94,19 @@ public class MyWaiters {
     }
 
     public WebElement waitPresenceOfElementReturn(By by) {
-        return fluentWait(EXPLICITY_WAIT).until(ExpectedConditions.presenceOfElementLocated(by));
+        return fluentWait(EXPLICITY_WAIT).until(presenceOfElementLocated(by));
     }
     public void waitPresenceOfElement(By by) {
-        waitForFunction(ExpectedConditions.presenceOfElementLocated(by), EXPLICITY_WAIT);
+        waitForFunction(presenceOfElementLocated(by), EXPLICITY_WAIT);
     }
 
     public void waitTitleContainsText(String text) {
         waitForFunction(ExpectedConditions.titleContains(text), EXPLICITY_WAIT);
     }
 
-
+    public WebElement waitForPresentElementLocatedBy(By by) {
+        return fluentWait(EXPLICITY_WAIT)
+                .until(presenceOfElementLocated(by));
+    }
 
 }
